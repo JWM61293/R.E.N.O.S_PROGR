@@ -7,6 +7,7 @@ public class Start {
 	
 		
 		String a = "version1";
+		String b = "version2";
 		
 	}
 
