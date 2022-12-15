@@ -10,7 +10,9 @@ public class Start {
 		String b = "version2";
 		String c = "versionPuebaGithub";
 		System.out.println("Versión remota");
-		System.out.println("prueba de puL editado por otro compañero")
+		System.out.println("prueba de puL editado por otro compañero");
+		System.out.println("estos cambios estan en la rama BECARIO");
+		
 
 		
 	}
