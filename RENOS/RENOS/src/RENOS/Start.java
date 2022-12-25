@@ -18,7 +18,7 @@ public class Start {
 		Bola.setDefensa(900);
 		Bola.setPuntosVida(15670);
 
-		
+	
 		
 
 	}
