@@ -5,8 +5,8 @@ public class Robot {
 	//ATRIBUTOS
 	private String nombre;
 	private float puntosVida;
-	private float ataque;
-	private float defensa;
+	private int ataque= (int)(Math.random()*20);
+	private int defensa= (int)(Math.random()*100);;
 	
 	
 	//CONSTRUCTORES
@@ -21,15 +21,16 @@ public class Robot {
 		*/
 	}
 	
-	private float generarAtque () {
-		
-		float ataque=2 //no me aclaro ni un pelu;
-		
-		int fuerzaAtaque= 0;
-		
+	
+		private float generarAtaque() {
+			
+			
+			
+			return ataque;
+		}
 		
 	
-	}
+	
 	
 	//GETTERS
 	public String getNombre() {
