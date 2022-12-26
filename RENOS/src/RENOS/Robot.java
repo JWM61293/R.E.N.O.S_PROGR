@@ -23,7 +23,7 @@ public class Robot {
 	
 	private float generarAtque () {
 		
-		float ataque= ;
+		float ataque=0;
 		
 		int fuerzaAtaque= 0;
 		
