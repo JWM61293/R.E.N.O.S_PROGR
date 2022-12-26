@@ -4,13 +4,13 @@ public class Robot {
 	
 	//ATRIBUTOS
 	private String nombre;
-	private float puntosVida;
+	private int puntosVida;
 	private int ataque= (int)(Math.random()*20);
 	private int defensa= (int)(Math.random()*100);;
 	
 	
 	//CONSTRUCTORES
-	public Robot (String nombre,float puntosVida) {
+	public Robot (String nombre,int puntosVida) {
 		//Son valores que no varian
 		this.nombre=nombre;
 		this.puntosVida= 100;
