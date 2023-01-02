@@ -5,13 +5,18 @@ public class Robot {
 	//ATRIBUTOS
 	private String nombre;
 	private int puntosVida;
-	private int ataque= (int)(Math.random()*20);
-	private int defensa= (int)(Math.random()*100);;
+	private int ataque;
+	private int defensa;
 	
+	
+	/*
+	//METODOS
+	private void generarAtaque();
+	private void generarDefensa();
 	
 	//CONSTRUCTORES
-	public Robot (String nombre,int puntosVida) {
-		//Son valores que no varian
+	public Robot (String nombre) {
+		
 		this.nombre=nombre;
 		this.puntosVida= 100;
 		/* 
@@ -19,18 +24,33 @@ public class Robot {
 		this.ataque=generarAtaque(); 
 		this.defensa=generarDefensa();
 		*/
+	/*}
+	
+	
+	while (int puntosVida>0) {
+		
+		
 	}
 	
 	
-		private float generarAtaque() {
+	
+		private int generarAtaque() {
+			
+			int ataque= (int)(Math.random()*20);
 			
 			
 			
-			return ataque;
+			return ;
 		}
 		
-	
-	
+	private int generarDefensa() {
+		
+		int defensa=(int)(Math.random()*100);
+		
+		
+		return ;
+	}
+	*/
 	
 	//GETTERS
 	public String getNombre() {
@@ -51,13 +71,13 @@ public class Robot {
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
-	public void setPuntosVida(float puntosVida) {
+	public void setPuntosVida(int puntosVida) {
 		this.puntosVida = puntosVida;
 	}
-	public void setAtaque(float ataque) {
+	public void setAtaque(int ataque) {
 		this.ataque = ataque;
 	}
-	public void setDefensa(float defensa) {
+	public void setDefensa(int defensa) {
 		this.defensa = defensa;
 	}
 	
