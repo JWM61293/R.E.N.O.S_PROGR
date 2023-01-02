@@ -19,45 +19,22 @@ public class Robot {
 		
 	}
 	
-
-	
-	
-	
-	
-	
-	/*
-	//METODOS
-	private void generarAtaque();
-	private void generarDefensa();
-	
-	
-	
-	
-	while (int puntosVida>0) {
+	private void generarAteque() {
 		
-		
-	}
-	
-	
-	
-		private int generarAtaque() {
-			
-			int ataque= (int)(Math.random()*20);
+		int ataque= (int)(Math.random()*+20);
+		while (puntosVida>0) {
 			
 			
 			
-			return ;
 		}
 		
-	private int generarDefensa() {
-		
-		int defensa=(int)(Math.random()*100);
-		
-		
-		return ;
-	}
-	*/
 	
+	}
+	
+	
+	
+	
+
 
 	
 	//GETTERS
