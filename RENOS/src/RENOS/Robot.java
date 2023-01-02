@@ -21,16 +21,27 @@ public class Robot {
 	
 	private void generarAteque() {
 		
-		int ataque= (int)(Math.random()*+20);
 		while (puntosVida>0) {
 			
+			int ataque= (int)(Math.random()*+20);
+			if(ataque>defensa) {
+				defensa--;
+			}
 			
 			
 		}
 		
 	
 	}
-	
+	private void generarDefensa() {
+		 
+		int defensa = (int)(Math.random()*+100);
+		if(defensa<ataque) {
+			defensa=defensa;
+		}
+		
+		
+	}
 	
 	
 	
