@@ -14,12 +14,12 @@ public class Robot {
 		
 		this.nombre=nombre;
 		this.puntosVida=100;
-		this.ataque= (int)(Math.random()*+20);
-		this.defensa= (int)(Math.random()*+100);
+		this.ataque=  generarAtaque();     //(int)(Math.random()*+20);
+		this.defensa=  generarDefensa();    //(int)(Math.random()*+100);
 		
 	}
 	
-	private void generarAteque() {
+	private int generarAtaque() {
 		
 		while (puntosVida>0) {
 			
@@ -31,15 +31,16 @@ public class Robot {
 			
 		}
 		
-	
+		return ataque;
 	}
-	private void generarDefensa() {
+	private int generarDefensa() {
 		 
 		int defensa = (int)(Math.random()*+100);
 		if(defensa<ataque) {
 			defensa=defensa;
 		}
 		
+		return defensa;
 		
 	}
 	
