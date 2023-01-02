@@ -21,6 +21,7 @@ public class Robot {
 	
 	private int generarAtaque() {
 		
+		int puntosVida=100;
 		while (puntosVida>0) {
 			
 			int ataque= (int)(Math.random()*+20);
@@ -36,7 +37,7 @@ public class Robot {
 		return ataque;
 	}
 	private int generarDefensa() {
-		 
+		
 		int defensa = (int)(Math.random()*+100);
 		if(defensa>ataque) {
 			defensa=defensa;
@@ -45,7 +46,14 @@ public class Robot {
 		return defensa;
 		
 	}
+
 	
+	public void imprimir() {
+		System.out.println(puntosVida);
+		System.out.println(ataque);
+		System.out.println(defensa);
+		
+	}
 	
 	
 
