@@ -14,27 +14,31 @@ public class Robot {
 		
 		this.nombre=nombre;
 		this.puntosVida=100;
-		this.ataque=  generarAtaque();     //(int)(Math.random()*+20);
-		this.defensa=  generarDefensa();    //(int)(Math.random()*+100);
+		this.ataque=  generarAtaque();     
+		this.defensa=  generarDefensa();   
 		
 	}
 	
+	/**
+	 * Vamos a generar constantemente ataques mientras el robot tenga puntos de vida 
+	 * @return los puntos de vida del robot actualizados
+	 */
 	private int generarAtaque() {
 		
-		int puntosVida=100;
-		while (puntosVida>0) {
-			
 			int ataque= (int)(Math.random()*+20);
-			if(ataque>defensa) {
-				defensa--;
-			}
-			else {
-				ataque=0;
-			}
+			int defensa=(int)(Math.random()*+100);
 			
-		}
+			for(int puntosVida=100;puntosVida>0; puntosVida-- ) {
+				if(ataque>defensa) {
+					defensa--;
+					
+				}
+				else if (ataque<defensa) {
+					ataque=defensa;
+				}
+			}
 		
-		return ataque;
+			return (int) puntosVida;
 		
 	}
 
@@ -43,21 +47,18 @@ public class Robot {
 	private int generarDefensa() {
 		
 		int defensa = (int)(Math.random()*+100);
+		int ataque= (int)(Math.random()*+20);
+		
 		if(defensa>ataque) {
 			defensa=defensa;
 		}
+		System.out.println("como va "+ defensa);
 		
 		return defensa;
 		
 	}
 
-	public double vidaRobot (double puntosVida) {
-		
-		puntosVida-=ataque;
-		return puntosVida;
-		
-		
-	}
+	
 	
 	
 	//GETTERS
@@ -91,18 +92,12 @@ public class Robot {
 
 	
 	
-	public void imprimir() {
-		System.out.println(puntosVida);
-		System.out.println(ataque);
-		System.out.println(defensa);
-		
-	}
-	/*public String toString() {
+	public String toString() {
 		return "Robot [nombre=" + nombre + ", puntosVida=" + puntosVida + ", ataque=" + ataque + ", defensa=" + defensa
 				+ "]";
 	}
 	
-	*/
+	
 
 }
 
