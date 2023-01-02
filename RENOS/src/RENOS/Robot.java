@@ -27,7 +27,9 @@ public class Robot {
 			if(ataque>defensa) {
 				defensa--;
 			}
-			
+			else {
+				ataque=0;
+			}
 			
 		}
 		
@@ -36,7 +38,7 @@ public class Robot {
 	private int generarDefensa() {
 		 
 		int defensa = (int)(Math.random()*+100);
-		if(defensa<ataque) {
+		if(defensa>ataque) {
 			defensa=defensa;
 		}
 		
