@@ -9,22 +9,25 @@ public class Robot {
 	private int defensa;
 	
 	
+	//CONSTRUCTORES
+	public Robot (String nombre) {
+		
+		this.nombre=nombre;
+		
+	}
+	
+
+	
+	
+	
+	
+	
 	/*
 	//METODOS
 	private void generarAtaque();
 	private void generarDefensa();
 	
-	//CONSTRUCTORES
-	public Robot (String nombre) {
-		
-		this.nombre=nombre;
-		this.puntosVida= 100;
-		/* 
-		 * Valores aleatorios
-		this.ataque=generarAtaque(); 
-		this.defensa=generarDefensa();
-		*/
-	/*}
+	
 	
 	
 	while (int puntosVida>0) {
@@ -51,6 +54,8 @@ public class Robot {
 		return ;
 	}
 	*/
+	
+
 	
 	//GETTERS
 	public String getNombre() {
