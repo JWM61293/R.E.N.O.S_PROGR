@@ -4,7 +4,7 @@ public class Robot {
 	
 	//ATRIBUTOS
 	private String nombre;
-	private int puntosVida;
+	private double puntosVida;
 	private int ataque;
 	private int defensa;
 	
@@ -35,7 +35,11 @@ public class Robot {
 		}
 		
 		return ataque;
+		
 	}
+
+	
+	
 	private int generarDefensa() {
 		
 		int defensa = (int)(Math.random()*+100);
@@ -47,29 +51,26 @@ public class Robot {
 		
 	}
 
-	
-	public void imprimir() {
-		System.out.println(puntosVida);
-		System.out.println(ataque);
-		System.out.println(defensa);
+	public double vidaRobot (double puntosVida) {
+		
+		puntosVida-=ataque;
+		return puntosVida;
+		
 		
 	}
 	
-	
-
-
 	
 	//GETTERS
 	public String getNombre() {
 		return nombre;
 	}
-	public float getPuntosVida() {
+	public double getPuntosVida() {
 		return puntosVida;
 	}
-	public float getAtaque() {
+	public int getAtaque() {
 		return ataque;
 	}
-	public float getDefensa() {
+	public int getDefensa() {
 		return defensa;
 	}
 	
@@ -78,7 +79,7 @@ public class Robot {
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
-	public void setPuntosVida(int puntosVida) {
+	public void setPuntosVida(double puntosVida) {
 		this.puntosVida = puntosVida;
 	}
 	public void setAtaque(int ataque) {
@@ -87,14 +88,21 @@ public class Robot {
 	public void setDefensa(int defensa) {
 		this.defensa = defensa;
 	}
+
 	
 	
-	public String toString() {
+	public void imprimir() {
+		System.out.println(puntosVida);
+		System.out.println(ataque);
+		System.out.println(defensa);
+		
+	}
+	/*public String toString() {
 		return "Robot [nombre=" + nombre + ", puntosVida=" + puntosVida + ", ataque=" + ataque + ", defensa=" + defensa
 				+ "]";
 	}
 	
-	
+	*/
 
 }
 
