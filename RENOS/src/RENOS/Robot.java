@@ -14,8 +14,8 @@ public class Robot {
 		
 		this.nombre=nombre;
 		this.puntosVida=100;
-		this.ataque=  generarAtaque();     
-		this.defensa=  generarDefensa();   
+		generarAtaque();     
+		generarDefensa();   
 		
 	}
 	
@@ -23,7 +23,7 @@ public class Robot {
 	 * Vamos a generar constantemente ataques mientras el robot tenga puntos de vida 
 	 * @return los puntos de vida del robot actualizados
 	 */
-	private int generarAtaque() {
+	private void generarAtaque() {
 		
 			int ataque= (int)(Math.random()*+20);
 			int defensa=(int)(Math.random()*+100);
@@ -38,13 +38,12 @@ public class Robot {
 				}
 			}
 		
-			return (int) puntosVida;
 		
 	}
 
 	
 	
-	private int generarDefensa() {
+	private void generarDefensa() {
 		
 		int defensa = (int)(Math.random()*+100);
 		int ataque= (int)(Math.random()*+20);
@@ -52,9 +51,12 @@ public class Robot {
 		if(defensa>ataque) {
 			defensa=defensa;
 		}
-		System.out.println("como va "+ defensa);
 		
-		return defensa;
+		
+	}
+	
+	private void luchar () {
+		
 		
 	}
 

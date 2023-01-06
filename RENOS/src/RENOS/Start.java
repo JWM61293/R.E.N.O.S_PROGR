@@ -7,21 +7,19 @@ public class Start {
 		
 		//Creamos dos Robot´s
 		Robot Peleon = new Robot("Firulais");
-		Peleon.getPuntosVida();
-		Peleon.getAtaque();
-		Peleon.getDefensa();
-	
-		System.out.println(Peleon);
+		System.out.println(Peleon.toString());
+		
 		
 		Robot Bola = new Robot("Chapa");
 		Bola.getPuntosVida();
-		Bola.getAtaque();
-		Bola.getDefensa();
 		
-		System.out.println(Bola);
+		
+		
 	
 		
 
 	}
+
+	
 
 }
