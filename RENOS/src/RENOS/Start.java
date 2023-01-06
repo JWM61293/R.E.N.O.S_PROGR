@@ -11,7 +11,7 @@ public class Start {
 		
 		
 		Robot Bola = new Robot("Chapa");
-		Bola.getPuntosVida();
+		System.out.println(Bola.toString());
 		
 		
 		

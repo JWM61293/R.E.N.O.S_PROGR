@@ -21,7 +21,7 @@ public class Robot {
 	
 	/**
 	 * Vamos a generar constantemente ataques mientras el robot tenga puntos de vida 
-	 * @return los puntos de vida del robot actualizados
+	 * 
 	 */
 	private void generarAtaque() {
 		
@@ -54,12 +54,6 @@ public class Robot {
 		
 		
 	}
-	
-	private void luchar () {
-		
-		
-	}
-
 	
 	
 	
